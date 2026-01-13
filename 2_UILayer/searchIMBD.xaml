@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>797.6,1617.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>620,1544.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>searchIMBD_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -105,25 +105,33 @@
       <AssemblyReference>System.Private.Uri</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="searchIMBD" sap:VirtualizedContainerService.HintSize="638,1172" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="searchIMBD" sap:VirtualizedContainerService.HintSize="574.4,1480" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp; TV Shows" sap:VirtualizedContainerService.HintSize="484,1149" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="6f28bf11-7124-4647-b7a0-36062aa28dee" Version="V2">
+    <Assign sap:VirtualizedContainerService.HintSize="512,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[movieName]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">Rapunsel</InArgument>
+      </Assign.Value>
+    </Assign>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp; TV Shows" sap:VirtualizedContainerService.HintSize="512,1246.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="6f28bf11-7124-4647-b7a0-36062aa28dee" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,903.5" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="478.4,1029.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT suggestion-search'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,261" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="6f28bf11-7124-4647-b7a0-36062aa28dee" Text="[movieName]" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT suggestion-search'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="6f28bf11-7124-4647-b7a0-36062aa28dee" Text="[movieName]" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.imdb.com/" DesignTimeRectangle="468, 132, 758, 39" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT suggestion-search'" FullSelectorArgument="&lt;webctrl id='suggestion-search' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='suggestion-search' tag='INPUT' type='text' class='imdb-header-search__input searchTypeahead__input react-autosuggest__input' aaname='' /&gt;" Guid="7c71cbbb-1111-4323-bb64-e9f239ffc010" InformativeScreenshot="8707dcf9d72eb3e0bbd5bcd6c365cb4a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp;amp; TV Shows' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
               </uix:NTypeInto.Target>
