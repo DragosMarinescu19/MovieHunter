@@ -2,7 +2,7 @@
   "name": "MovieAvailabilityNotifier",
   "projectId": "e1be3dfd-3bc6-48d4-b107-337c5b7fe20d",
   "description": "UiPath RPA robot that checks movie availability at cinema and TV\r\nand notifies the user by email.",
-  "main": "Main.xaml",
+  "main": "1_ProcessLayer\\Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.22.3]",
     "UiPath.Mail.Activities": "[1.21.1]",
@@ -49,8 +49,8 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "f612be8c-b1c8-4948-b865-e60f109daee8",
+      "filePath": "1_ProcessLayer\\Main.xaml",
+      "uniqueId": "e2b820ec-063e-47b1-b17e-94cfd4edd290",
       "input": [],
       "output": []
     }
