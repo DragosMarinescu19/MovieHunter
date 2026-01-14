@@ -264,7 +264,7 @@
                     </Assign.Value>
                   </Assign>
                   <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="522,122.5" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[&quot;Release date: &quot; &amp; GlobalVariablesNamespace.GlobalVariables.releaseDate]" />
-                  <Sequence DisplayName="Notify Clients" sap:VirtualizedContainerService.HintSize="522,2419.5" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                  <Sequence DisplayName="Get Time Periods" sap:VirtualizedContainerService.HintSize="522,2419.5" sap2010:WorkflowViewState.IdRef="Sequence_15">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
